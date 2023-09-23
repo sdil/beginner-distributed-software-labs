@@ -10,9 +10,9 @@ dataDir=/var/lib/zookeeper
 clientPort=2181
 initLimit=5
 syncLimit=2
-server.1=zoo1:2888:3888 # Update the zookeepers hostname 
-server.2=zoo2:2888:3888 # Update the zookeepers hostname
-server.3=zoo3:2888:3888 # Update the zookeepers hostname
+server.1=zoo1:2888:3888 # Update the node hostname 
+server.2=zoo2:2888:3888 # Update the node hostname
+server.3=zoo3:2888:3888 # Update the node hostname
 EOF > conf/zoo.cfg
 
 
