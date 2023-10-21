@@ -8,3 +8,4 @@ This is where I play, experiment and break distributed system setups.
 - Network unreliable (using toxiproxy)
 - Split brain
 - Failover
+- Rebalancing
