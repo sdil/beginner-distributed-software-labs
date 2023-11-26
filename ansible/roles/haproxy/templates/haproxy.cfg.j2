@@ -1,6 +1,9 @@
 global
     daemon
     maxconn 256
+{% if haproxy_stats_socket %}
+    stats socket {{ haproxy_stats_socket }}
+{% endif %}
 
 defaults
     mode http
@@ -9,7 +12,7 @@ defaults
     timeout server 50000ms
 
 listen cluster
-    bind :80
+    bind {{ ansible_default_ipv4.address }}:80
     mode http
     stats enable
     balance roundrobin

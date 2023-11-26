@@ -1,0 +1,9 @@
+- hosts: web
+  become: yes
+  roles:
+    - apache
+
+- hosts: haproxy
+  become: yes
+  roles:
+    - haproxy
