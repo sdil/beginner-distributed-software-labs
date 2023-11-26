@@ -1,0 +1,7 @@
+[web]
+ansible1@orb ansible_user=ansible1
+ansible2@orb ansible_user=ansible2
+ansible3-deb@orb ansible_user=ansible3-deb
+
+[haproxy]
+ansible4-deb@orb ansible_user=ansible4-deb
